@@ -1,0 +1,23 @@
+{
+  "name": "dodothemagicaltodo",
+  "version": "1.0.0",
+  "description": "Todo with small twist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css" : "npx tailwindcss -i ./tailwind.css -o ./public/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hussain-alsayedali/DodoTheMagicalToDo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hussain-alsayedali/DodoTheMagicalToDo/issues"
+  },
+  "homepage": "https://github.com/hussain-alsayedali/DodoTheMagicalToDo#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

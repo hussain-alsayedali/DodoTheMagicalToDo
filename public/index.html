@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="all.js"></script>
+    <title>Document</title>
+
+
+</head>
+<!-- <div class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex justify-center items-end text-xl bg-gray-200 text-black font-semibold">Dwayne</div> -->
+<body class="h-full bg-[url('pics/932271.jpg')] ">
+    <!-- header -->
+
+    <header class="flex flex-center">
+        <div class="mt-4 ml-4">
+            <h1 id="mainText" class="text-left text-lg text-green-100">DoDo The Magical ToDo</h1>
+        </div>
+    </header>
+    <!-- input -->
+   
+    <div class="flex justify-center items-center mt-10">
+        <div class="flex justify-center items-start content-center ">
+            <div class="mt-16">
+                <form action= "">
+                    <input type="text" placeholder="study math 101" id = "todoText" 
+                        class="text-green-800 w-64 rounded px-6 py-2  border-green-600 border-2">
+                    <button id="todoSubmit" value="new-todo-submit" type="button"
+                        class="text-base text-green-800 bg-white border-2 py-2 px-8 rounded hover:bg-green-600 hover:text-white duration-300">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- output -->
+    <div class="flex justify-center mt-12 max-md:flex-col">
+        <div class=" border-green-400 border-2 px-20 pt-5 pb-10 bg-white rounded md:mr-10 max-md:w-4/5 max-md:mx-auto">
+            <h1 class="text-green-700 border-b-2 border-gray-500">hmmmmm what we have today</h1>
+            <ul id = "todoList">
+                <!-- <li class=" bg-emerald-600 rounded">
+                    <div class="clickableTrash inline-block">
+                        <i class="ml-2 fa-solid fa-trash transition duration-200 hover:text-green-500 z-30 focus:pointer-events-auto"></i>
+                    </div>
+                    <div class="clickableCheck inline-block">
+                        <i class="fa-solid fa-check transition duration-200 hover:text-green-500"></i>
+                    </div>
+                    <span class="text-white">meow</span>
+                </li> -->
+            </ul>
+            <div class="group z-40">
+                <button id = "clear-todo" class="mt-8 px-4 py-4 border-2 bg-transparent  text-green-700 hover:bg-green-500 hover:text-white rounded-lg duration-300">Clear All</button>
+                <span class="absolute w-auto p-2 m-2 min-w-max left-100 rounded-md shadow-md
+                text-white bg-gray-900 
+                text-xs font-bold 
+                transition-all duration-100 scale-0 group-hover:scale-100 origin-left">double click to clear all</span>
+            </div>
+        </div>
+        
+        <div class=" border-green-400 border-2 px-20 pt-5 pb-10 bg-white rounded max-md:mt-8 max-md:w-4/5 max-md:mx-auto">
+            <h1 class="text-green-700 border-b-2 border-gray-500">look so EZ</h1>
+            <ul id = "finishedToDO">
+                <!-- <li>
+                    <div class="clickableTrash inline-block">
+                        <i  class="fa-solid fa-trash transition duration-200 hover:text-green-500 z-30 focus:pointer-events-auto"></i>
+                    </div>
+                    <span>test</span>
+                </li> -->
+            </ul>
+            <div class="group z-40">
+                <button id = "clear-finished" class="mt-8 px-4 py-4 border-2 bg-transparent  text-green-700 hover:bg-green-500 hover:text-white rounded-lg duration-300">Clear All</button>
+                <span class="absolute w-auto p-2 m-2 min-w-max left-50 rounded-md shadow-md
+                text-white bg-gray-900 
+                text-xs font-bold 
+                transition-all duration-100 scale-0 group-hover:scale-100 origin-left">double click to clear all</span>
+            </div>
+        </div>
+    </div>
+    <!-- dodo or ooga booga -->
+    <div class="mt-10 flex justify-center">
+        <div class="bg-teal-800 w-fit rounded">
+            <h2 class="text-center mt-3">Who am I ?</h2>
+
+            <div class="flex justify-center mt-4">
+
+                <div class="m-4 flex justify-start flex-col   rounded-lg ">
+                    <input id="dodo-radio" type="radio" value="dodo" name="default-radio" class="text-blue-600 bg-gray-100 hidden peer ">
+                    <label for="dodo-radio" class="border-green-400 text-sm font-medium text-gray-900  text-center cursor-pointer peer-checked:bg-slate-400 rounded-lg transition duration-200 hover:bg-blue-500">
+                        <span>DoDo</span> 
+                        <!-- <i class="fa-regular fa-circle-info cursor-help"></i> -->
+                        <div class="group">
+                            <i class=" fa-regular fa-circle-info cursor-help z-30"></i>
+                            <span class = " absolute w-auto p-2 m-2 min-w-max left-100 rounded-md shadow-md
+                            text-white bg-gray-900 
+                            text-xs font-bold 
+                            transition-all duration-100 scale-0 group-hover:scale-100 origin-left">will make the todos normal again</span>
+                        </div>
+                        <img src="pics/theDoDo-removebg.png" alt="cute DoDo" class="w-44 ">
+                    </label>
+                </div>
+
+                <div  class="m-4 flex justify-center flex-col  rounded-lg ">
+                    <input id="ooga-radio" type="radio" value="ooga" name="default-radio" class="text-blue-600 bg-gray-100 hidden peer">
+                    <label for="ooga-radio" class="border-green-400 text-sm font-medium text-gray-900  text-center cursor-pointer peer-checked:bg-slate-400 rounded-lg transition duration-200 hover:bg-lime-500 ">
+                        <span>OOGA BOOGA</span> 
+                        <div class="group">
+                            <i class=" fa-regular fa-circle-info cursor-help z-30"></i>
+                            <span class = " absolute w-auto p-2 m-2 min-w-max left-100 rounded-md shadow-md
+                            text-white bg-gray-900 
+                            text-xs font-bold 
+                            transition-all duration-100 scale-0 group-hover:scale-100 origin-left">will randomize the toDos for u , you can only select the first one</span>
+                        </div>
+
+                        <img src="pics/OOGA BOOGA.png" class="w-44 ">
+                    </label>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+</body>
+    <script src="index.js"></script> 
+</html>
