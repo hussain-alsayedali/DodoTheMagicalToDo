@@ -1,5 +1,6 @@
 # DodoTheMagicalToDo
-Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).
+Todo with a small twist.
+one of the major problems when doing tasks is seeing some tasks hard and procrastinate them. this todo could randomize the todos(and you could only finish them one by one), which would hopefully remove this problem.
 
 **Link to project:** https://dodothemagicaltodo.netlify.app/
 
